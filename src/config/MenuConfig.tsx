@@ -1,39 +1,57 @@
 import {
-  UserOutlined,
-  VideoCameraOutlined,
-  UploadOutlined,
+  AppstoreOutlined,
+  BarChartOutlined,
+  FileTextOutlined,
+  HddOutlined,
+  InfoCircleOutlined,
+  SettingOutlined,
+  WarningOutlined,
 } from "@ant-design/icons";
 import { type AppMenuItem } from "../component/Types";
 
 export const menuItems: AppMenuItem[] = [
   {
-    key: "1",
-    label: "Dash Board",
-    icon: <UserOutlined />,
+    key: "dashboard",
+    label: "Dashboard",
+    icon: <AppstoreOutlined />,
   },
   {
-    key: "2",
+    key: "factory-info",
     label: "Thông tin nhà máy",
-    icon: <VideoCameraOutlined />,
+    icon: <BarChartOutlined />,
     children: [
       {
-        key: "2-1",
+        key: "factory-chart",
         label: "Biểu đồ",
+        icon: <BarChartOutlined />,
       },
       {
-        key: "2-2",
-        label: "Nhà máy 2",
-      },
-      {
-        key: "2-3",
-        label: "Nhà máy 3",
+        key: "factory-detail",
+        label: "Chi tiết",
+        icon: <FileTextOutlined />,
       },
     ],
   },
   {
-    key: "3",
-    label: "Upload",
-    icon: <UploadOutlined />,
+    key: "warning",
+    label: "Cảnh báo",
+    icon: <WarningOutlined />,
+  },
+  {
+    key: "settings",
+    label: "Cài đặt",
+    icon: <SettingOutlined />,
+    children: [
+      {
+        key: "settings-info",
+        label: "Thông tin",
+        icon: <InfoCircleOutlined />,
+      },
+      {
+        key: "settings-hardware",
+        label: "Phần cứng",
+        icon: <HddOutlined />,
+      },
+    ],
   },
 ];
-
