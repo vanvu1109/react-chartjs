@@ -13,6 +13,9 @@
 
 .menuWrapper {
   padding: 0;
+  margin-inline: 14px;
+  background-color: #494949;
+  padding-bottom: 10px;
 }
 
 .menu {
@@ -24,7 +27,7 @@
 .menu :global .ant-menu-submenu-title {
   height: 48px;
   line-height: 48px;
-  margin: 4px 8px;
+  margin-block: 4px;
   padding-left: 16px !important;
   border-radius: 8px;
   color: #a0aec0;
@@ -53,6 +56,10 @@
   background-color: #3b82f6 !important;
 }
 
+.menu :global .ant-menu-submenu-open .ant-menu-submenu-title {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
 .menu :global .ant-menu-submenu .ant-menu-submenu-title .ant-menu-submenu-arrow {
   color: #a0aec0;
 }
@@ -62,26 +69,18 @@
 }
 
 .menu :global .ant-menu-sub {
+  margin-left: 30px;
   background-color: transparent !important;
 }
 
 .menu :global .ant-menu-sub .ant-menu-item {
-  padding-left: 48px !important;
+  padding-left: 24px !important;
   height: 40px;
   line-height: 40px;
-  margin: 2px 8px;
-}
-
-.menu :global .ant-menu-sub .ant-menu-item::before {
-  content: "";
-  position: absolute;
-  left: 24px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: currentColor;
+  margin-block: 2px;
+  color: #fff !important;
+  margin-bottom: 5px;
+  background-color: #686868 !important;
 }
 
 .menu :global .ant-menu-item-divider {
