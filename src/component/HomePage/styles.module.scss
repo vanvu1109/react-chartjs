@@ -1,0 +1,10 @@
+@import "@/assets/styles/__mixin.module.scss";
+
+.container{
+    @include flex_box(space-between, center, 0, 10px);
+    padding: 0px 10px;
+}
+
+.input {
+    margin-right: 10px;
+}

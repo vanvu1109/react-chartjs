@@ -1,0 +1,6 @@
+@import "@/assets/styles/__mixin.module.scss";
+
+.contianer_chart_table{
+    @include flex_box(space-between, center, 0,0);
+    padding: 0px 10px;
+}

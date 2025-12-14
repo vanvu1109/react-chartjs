@@ -1,0 +1,10 @@
+
+
+@mixin flex_box($x, $y, $gap, $color) {
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+    gap: $gap;
+    background-color: $color;
+
+}
